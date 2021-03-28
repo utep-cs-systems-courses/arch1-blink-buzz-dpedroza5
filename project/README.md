@@ -21,6 +21,5 @@ Switch | Pattern
 -------|--------
   1    | LEDs toggle and the B-flat major scale plays 
   2    | LEDs turn on in binary from 0-3 then 3-0 and an arpeggio plays up and down
-  3    | Plays a race countdown sound and the red LED blinks 3 times then the
-       | green LED lights up
+  3    | Plays a race countdown sound and the red LED blinks 3 times then the green LED lights up
   4    | LEDs flash together on and off repeatedly and a siren begins to play
