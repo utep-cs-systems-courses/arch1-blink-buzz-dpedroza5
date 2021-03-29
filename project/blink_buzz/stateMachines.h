@@ -1,6 +1,7 @@
 #ifndef stateMachine_included
 #define stateMachine_included
 
+void switch_state_advance();
 void default_state_advance();
 void switch1_state_advance();
 void switch2_state_advance();

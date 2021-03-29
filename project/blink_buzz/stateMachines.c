@@ -98,22 +98,10 @@ void state4_advance() //LEDs flash together repeatedly and a siren plays
 {
   static char state = 0;
   switch(state) {
-  case 0: red_on = 0; green_on = 0; buzzer_set_period(2000); state++; break;
-  case 1: red_on = 1; green_on = 1; buzzer_set_period(1950); state++; break;
-  case 2: red_on = 0; green_on = 0; buzzer_set_period(1900); state++; break;
-  case 3: red_on = 1; green_on = 1; buzzer_set_period(1850); state++; break;
-  case 4: red_on = 0; green_on = 0; buzzer_set_period(1800); state++; break;
-  case 5: red_on = 1; green_on = 1; buzzer_set_period(1750); state++; break;
-  case 6: red_on = 0; green_on = 0; buzzer_set_period(1700); state++; break;
-  case 7: red_on = 1; green_on = 1; buzzer_set_period(1650); state++; break;
-  case 8: red_on = 0; green_on = 0; buzzer_set_period(1600); state++; break;
-  case 9: red_on = 1; green_on = 1; buzzer_set_period(1650); state++; break;
-  case 10: red_on = 0; green_on = 0; buzzer_set_period(1700); state++; break;
-  case 11: red_on = 1; green_on = 1; buzzer_set_period(1750); state++; break;
-  case 12: red_on = 0; green_on = 0; buzzer_set_period(1800); state++; break;
-  case 13: red_on = 1; green_on = 1; buzzer_set_period(1850); state++; break;
-  case 14: red_on = 0; green_on = 0; buzzer_set_period(1900); state++; break;
-  case 15: red_on = 1; green_on = 1; buzzer_set_period(1950); state = 0; break;
+  case 0: red_on = 1; green_on = 1; buzzer_set_period(637); state++; break;
+  case 1: red_on = 1; green_on = 1; buzzer_set_period(637); state++; break;
+  case 2: red_on = 0; green_on = 0; buzzer_set_period(1275); state++; break;
+  case 3: red_on = 0; green_on = 0; buzzer_set_period(1275); state = 0; break;
   default: state = 0;
   }
   led_changed = 1;
